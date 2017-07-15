@@ -32,6 +32,10 @@
         [self.layer removeAllAnimations];
         [self.layer.sublayers makeObjectsPerformSelector:@selector(removeAllAnimations)];
     }
+    else
+    {
+        NSLog(@"test git fork");
+    }
 }
 
 @end
