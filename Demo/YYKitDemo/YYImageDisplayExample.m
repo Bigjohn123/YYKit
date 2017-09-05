@@ -65,7 +65,7 @@
     [paths addObject:[basePath stringByAppendingPathComponent:@"d_haha@2x.png"]];
     [paths addObject:[basePath stringByAppendingPathComponent:@"d_haixiu@3x.png"]];
     
-    UIImage *image = [[YYFrameImage alloc] initWithImagePaths:paths oneFrameDuration:0.1 loopCount:0];
+    UIImage *image = [[YYFrameImage alloc] initWithImagePaths:paths oneFrameDuration:0.9 loopCount:0];
     [self addImage:image size:CGSizeZero text:text];
 }
 
@@ -85,7 +85,7 @@
             rect.origin.x = sheet.size.width / 8 * i;
             rect.origin.y = sheet.size.height / 12 * j;
             [contentRects addObject:[NSValue valueWithCGRect:rect]];
-            [durations addObject:@(1 / 60.0)];
+            [durations addObject:@(30.0 / 60.0)];
         }
     }
     YYSpriteSheetImage *sprite;

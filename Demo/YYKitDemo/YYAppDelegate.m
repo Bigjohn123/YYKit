@@ -27,6 +27,7 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
+    self.barTintColor = [UIColor orangeColor];
     if (!CGSizeEqualToSize(self.bounds.size, _previousSize)) {
         _previousSize = self.bounds.size;
         [self.layer removeAllAnimations];
